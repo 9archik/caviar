@@ -21,6 +21,7 @@
         url("../fonts/Stem-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -35,6 +36,7 @@
         url("../fonts/Stem-SemiLight.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -49,6 +51,7 @@
         url("../fonts/Stem-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -56,6 +59,7 @@
     src: url("../fonts/OrelegaOne-Regular.ttf");
     font-weight: 400;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -70,6 +74,7 @@
         url("../fonts/Montserrat-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -84,6 +89,7 @@
         url("../fonts/Montserrat-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
+    font-display: auto;
 }
 
 *::-webkit-scrollbar {
@@ -98,6 +104,6 @@
 }
 
 * {
-    scrollbar-color: #036 rgba(0, 0, 0, 0.15); /*Цвет скролла, цвет ползунка*/
-    scrollbar-width: thin; /*Толщина скролла thin, auto*/
+    scrollbar-color: #036 rgba(0, 0, 0, 0.15);
+    scrollbar-width: thin; 
 }

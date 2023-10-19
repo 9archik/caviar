@@ -13,25 +13,13 @@
       <div class="header__top-info container">
         <span class="header__address">Moscow, Varshavskoe highway 1с1-2</span>
         <div class="header__select-lang select-lang">
-          <label>
-            <input type="radio" name="language" value="en" checked />
-            <span>en</span>
-          </label>
+          <a class="select-lang__link active">en</a>
 
-          <label>
-            <input type="radio" name="language" value="bg" />
-            <span>бг</span>
-          </label>
+          <a class="select-lang__link">бг</a>
 
-          <label>
-            <input type="radio" name="language" value="fr" />
-            <span>fr</span>
-          </label>
+          <a class="select-lang__link">fr</a>
 
-          <label>
-            <input type="radio" name="language" value="gr" />
-            <span>gr</span>
-          </label>
+          <a class="select-lang__link">gr</a>
         </div>
       </div>
     </div>
@@ -39,7 +27,7 @@
 
   <div class="header__main">
     <div class="container header__main-container">
-      <div class="header__logo logo">
+      <a href="#" class="header__logo logo">
         <div class="header__logo-img logo__img">
           <svg xmlns="http://www.w3.org/2000/svg" width="92" height="44" viewBox="0 0 92 44" fill="none">
             <path
@@ -48,22 +36,22 @@
             />
           </svg>
         </div>
-        <span class="logo__text">
+        <div class="logo__text">
           <h1 class="logo__name">DOMAIN.COM</h1>
           <h2 class="logo__motto">HIGH QUALITY BLACK CAVIAR</h2>
-        </span>
-      </div>
+        </div>
+      </a>
 
       <div class="header__btns">
         <button class="header__burger-btn">
-          <div class="header__burger-icon">
+          <span class="header__burger-icon">
             <span></span>
-          </div>
+          </span>
           <span class="header__burger-btn-text">MENU</span>
         </button>
 
         <button class="header__basket-btn">
-          <img alt="basket" src="./img/basket.png" height="24" width="24" />
+          <img alt="basket" src="../../img/basket.png" height="24" width="24" />
         </button>
         <button class="header__auth-btn auth-btn">Enter / Register</button>
       </div>
@@ -72,7 +60,7 @@
 </header>
 <div class="burger">
   <div class="burger__header">
-    <div class="burger__logo logo blue">
+    <a href="#" class="burger__logo logo blue">
       <div class="logo__img">
         <svg xmlns="http://www.w3.org/2000/svg" width="66" height="32" viewBox="0 0 66 32" fill="none">
           <path
@@ -82,11 +70,11 @@
         </svg>
       </div>
 
-      <span class="logo__text">
+      <div class="logo__text">
         <h2 class="logo__name">DOMAIN.COM</h2>
         <h3 class="logo__motto">HIGH QUALITY BLACK CAVIAR</h3>
-      </span>
-    </div>
+      </div>
+    </a>
     <button class="burger__close-btn">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
@@ -126,25 +114,13 @@
       <div class="burger__select-lang-block">
         <span>Change language</span>
         <div class="burger__select-lang select-lang">
-          <label>
-            <input type="radio" name="language" value="en" checked />
-            <span>en</span>
-          </label>
+          <a class="select-lang__link active">en</a>
 
-          <label>
-            <input type="radio" name="language" value="bg" />
-            <span>бг</span>
-          </label>
+          <a class="select-lang__link">бг</a>
 
-          <label>
-            <input type="radio" name="language" value="fr" />
-            <span>fr</span>
-          </label>
+          <a class="select-lang__link">fr</a>
 
-          <label>
-            <input type="radio" name="language" value="gr" />
-            <span>gr</span>
-          </label>
+          <a class="select-lang__link">gr</a>
         </div>
       </div>
     </div>
@@ -207,10 +183,10 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img alt="product" src="./img/product.png" /></div>
-              <div class="swiper-slide"><img alt="product" src="./img/product.png" /></div>
-              <div class="swiper-slide"><img alt="product" src="./img/product.png" /></div>
-              <div class="swiper-slide"><img alt="product" src="./img/product.png" /></div>
+              <div class="swiper-slide"><img alt="product" src="../../img/product.png" /></div>
+              <div class="swiper-slide"><img alt="product" src="../../img/product.png" /></div>
+              <div class="swiper-slide"><img alt="product" src="../../img/product.png" /></div>
+              <div class="swiper-slide"><img alt="product" src="../../img/product.png" /></div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -536,8 +512,8 @@
     <main class="main">
   <div class="main__caviar caviar big-container">
     <picture class="caviar__caviar-bg">
-      <source media="(max-width: 1024px)" srcset="./img/bg-caviar-mob.png" />
-      <img src="./img/bg-caviar.png" />
+      <source media="(max-width: 1024px)" srcset="../../img/bg-caviar-mob.png" />
+      <img src="../../img/bg-caviar.png" alt="background-caviar" />
     </picture>
 
     <div class="caviar__descr">
@@ -553,7 +529,7 @@
       </div>
     </div>
 
-    <img alt="background caviar" src="./img/bg-fish.png" class="caviar__fish-bg" />
+    <img alt="background caviar" src="../../img/bg-fish.png" class="caviar__fish-bg" />
 
     <div class="caviar__products-btn">
       <span>Our products</span>
@@ -580,101 +556,53 @@
     <div class="products__filter filter__list-items">
       <div class="products__filter-name filter__name blue">Pressed caviar in several packaging options:</div>
       <div class="products__filter-list filter__list">
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Glass jar 50 g</span>
-        </label>
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Metal can 50 g</span>
-        </label>
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Glass jar 100 g</span>
-        </label>
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Metal can 100 g</span>
-        </label>
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Glass jar 250 g</span>
-        </label>
-        <label>
-          <input name="pressed-caviar" type="checkbox" />
-          <span>Metal jar 500 g</span>
-        </label>
+        <a class="filter__list-link">Glass jar 50 g</a>
 
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Plastic packaging 1kg</span>
-        </label>
+        <a class="filter__list-link">Metal can 50 g</a>
+
+        <a class="filter__list-link">Glass jar 100 g</a>
+
+        <a class="filter__list-link">Metal can 100 g</a>
+
+        <a class="filter__list-link">Glass jar 250 g</a>
+
+        <a class="filter__list-link">Metal jar 500 g</a>
+
+        <a class="filter__list-link">Plastic packaging 1kg</a>
       </div>
 
       <div class="products__filter-name filter__name">Sturgeon caviar</div>
       <div class="products__filter-list filter__list">
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 50 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal can 50 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 100 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal can 100 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 250 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal jar 500 g</span>
-        </label>
+        <a class="filter__list-link">Glass jar 50 g</a>
 
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Plastic packaging 1kg</span>
-        </label>
+        <a class="filter__list-link">Metal can 50 g</a>
+
+        <a class="filter__list-link">Glass jar 100 g</a>
+
+        <a class="filter__list-link">Metal can 100 g</a>
+
+        <a class="filter__list-link">Glass jar 250 g</a>
+
+        <a class="filter__list-link">Metal jar 500 g</a>
+
+        <a class="filter__list-link">Plastic packaging 1kg</a>
       </div>
 
       <div class="products__filter-name filter__name">Salmon caviar</div>
       <div class="products__filter-list filter__list">
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 50 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal can 50 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 100 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal can 100 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Glass jar 250 g</span>
-        </label>
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Metal jar 500 g</span>
-        </label>
+        <a class="filter__list-link active">Glass jar 50 g</a>
 
-        <label>
-          <input name="sturgeon-caviar" type="checkbox" />
-          <span>Plastic packaging 1kg</span>
-        </label>
+        <a class="filter__list-link">Metal can 50 g</a>
+
+        <a class="filter__list-link">Glass jar 100 g</a>
+
+        <a class="filter__list-link">Metal can 100 g</a>
+
+        <a class="filter__list-link">Glass jar 250 g</a>
+
+        <a class="filter__list-link">Metal jar 500 g</a>
+
+        <a class="filter__list-link">Plastic packaging 1kg</a>
       </div>
 
       <div class="products__filter-name filter__name">Smoked sturgeon vacuum packaging</div>
@@ -699,7 +627,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -739,7 +667,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -778,7 +706,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -816,7 +744,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -854,7 +782,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -892,7 +820,7 @@
         </div>
 
         <div class="card__image">
-          <img alt="product" src="./img/product.png" />
+          <img alt="product" src="../../img/product.png" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -939,7 +867,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product" />
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -979,7 +907,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product"/>
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -1018,7 +946,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product"/>
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -1056,7 +984,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product" />
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -1094,7 +1022,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product"/>
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -1132,7 +1060,7 @@
         </div>
 
         <div class="card__image">
-          <img src="./img/product.png" alt="product"/>
+          <img src="../../img/product.png" alt="product" />
           <button class="card__popup-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -1166,19 +1094,19 @@
       <h5 class="section-header documents__section-header">Documents</h5>
       <div class="documents__list">
         <div>
-          <img src="./img/doc1.png" alt="document 1" />
+          <img src="../../img/doc1.png" alt="document 1" />
         </div>
 
         <div>
-          <img src="./img/doc2.png" alt="document 2" />
+          <img src="../../img/doc2.png" alt="document 2" />
         </div>
 
         <div>
-          <img src="./img/doc3.png" alt="document 3"/>
+          <img src="../../img/doc3.png" alt="document 3" />
         </div>
 
         <div>
-          <img src="./img/doc4.png" alt="document 4"/>
+          <img src="../../img/doc4.png" alt="document 4" />
         </div>
       </div>
     </section>
@@ -1211,11 +1139,11 @@
           <a href="#">CONTACTS</a>
         </li>
       </ul>
-      <img alt="payment-logos" src="./img/payment-logo.png" />
+      <img alt="payment-logos" src="../../img/payment-logo.png" />
     </div>
 
     <div class="footer__black-cont mob container">
-      <div class="footer__logo logo black">
+      <a href="#" class="footer__logo logo black">
         <div class="footer__logo-img logo__img">
           <svg xmlns="http://www.w3.org/2000/svg" width="92" height="44" viewBox="0 0 92 44" fill="none">
             <path
@@ -1224,7 +1152,7 @@
             />
           </svg>
         </div>
-      </div>
+      </a>
 
       <div class="footer__contacts">
         <div class="footer__address">Bulgaria 9000, Varna, st. "Slavyanska" No. 8A, fl. 1, app. 2</div>
@@ -1236,7 +1164,7 @@
   <div class="footer__blue">
     <div class="footer__blue-cont desk container">
       <div class="footer__blue-cont-desk-top">
-        <div class="footer__logo logo blue">
+        <a href="#" class="footer__logo logo blue">
           <div class="footer__logo-img logo__img">
             <svg xmlns="http://www.w3.org/2000/svg" width="92" height="44" viewBox="0 0 92 44" fill="none">
               <path
@@ -1245,11 +1173,11 @@
               />
             </svg>
           </div>
-          <span class="logo__text">
+          <div class="logo__text">
             <h2 class="logo__name">DOMAIN.COM</h2>
             <h3 class="logo__motto">HIGH QUALITY BLACK CAVIAR</h3>
-          </span>
-        </div>
+          </div>
+        </a>
 
         <div class="footer__contacts">
           <div class="footer__address">Bulgaria 9000, Varna, st. "Slavyanska" No. 8A, fl. 1, app. 2</div>
@@ -1374,7 +1302,7 @@
   </div>
 
   <div class="footer__white-cont">
-    <img alt="payment-logos" src="./img/payment-logo.png" />
+    <img alt="payment-logos" src="../../img/payment-logo.png" />
 
     <div class="footer__site-creator">2023 Nikita Global site development</div>
   </div>

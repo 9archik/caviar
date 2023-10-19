@@ -16,60 +16,6 @@
         }
     }
 
-    // &__filter {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
-    // &__filter-list {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
-    // &__filter-name {
-    //     font-family: Orelega One;
-    //     font-size: 18px;
-    //     font-weight: 400;
-    //     line-height: 120%;
-
-    //     margin: 20px 0 0 0;
-
-    //     &:first-child {
-    //         margin: 0;
-    //     }
-
-    //     &.blue {
-    //         color: $oceanBlueColor;
-    //     }
-    // }
-
-    // &__filter-list {
-    //     label {
-    //         input {
-    //             display: none;
-    //         }
-
-    //         span {
-    //             color: $grayColor;
-    //             font-size: 16px;
-    //             line-height: 200%;
-    //             margin: 0 0 0 30px;
-    //             position: relative;
-
-    //             &::before {
-    //                 content: "";
-    //                 width: 2px;
-    //                 height: 2px;
-    //                 position: absolute;
-    //                 top: 50%;
-    //                 left: -16px;
-    //                 transform: translateY(-50%);
-    //                 background: $grayColor;
-    //             }
-    //         }
-    //     }
-    // }
-
     &__show-more {
         margin: 24px 0 0 0;
     }
@@ -116,32 +62,28 @@
         }
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        label {
-            input {
-                display: none;
-            }
+    &__list-link {
+        display: block;
+        color: $grayColor;
+        font-size: 16px;
+        line-height: 200%;
+        margin: 0 0 0 30px;
+        position: relative;
 
-            span {
-                color: $grayColor;
-                font-size: 16px;
-                line-height: 200%;
-                margin: 0 0 0 30px;
-                position: relative;
+        &.active {
+            color: $oceanBlueColor;
+            font-weight: 700;
+        }
 
-                &::before {
-                    content: "";
-                    width: 2px;
-                    height: 2px;
-                    position: absolute;
-                    top: 50%;
-                    left: -16px;
-                    transform: translateY(-50%);
-                    background: $grayColor;
-                }
-            }
+        &::before {
+            content: "";
+            width: 2px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+            background: $grayColor;
         }
     }
 }

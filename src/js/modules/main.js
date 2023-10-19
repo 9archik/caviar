@@ -142,27 +142,14 @@ export function windowClick() {
 }
 
 export const cardClick = () => {
-  const popupInfoBtns = document.querySelectorAll('.card__popup-info');
-  const basketBtns = document.querySelectorAll('.card__basket-btn');
+  const card = document.querySelectorAll('.card');
 
-  for (let i = 0; i < popupInfoBtns.length; i++) {
-    if (popupInfoBtns[i]) {
-      popupInfoBtns[i].onclick = () => {
-        popupWindow?.classList?.add('active');
-        popupProductWindow?.classList?.add('active');
-        popupProductClick();
-      };
-    }
-  }
-
-  for (let i = 0; i < basketBtns.length; i++) {
-    if (basketBtns[i]) {
-      basketBtns[i].onclick = () => {
-        popupWindow?.classList?.add('active');
-        popupProductWindow?.classList?.add('active');
-        popupProductClick();
-      };
-    }
+  for (let i = 0; i < card.length; i++) {
+    card[i].onclick = () => {
+      popupWindow?.classList?.add('active');
+      popupProductWindow?.classList?.add('active');
+      popupProductClick();
+    };
   }
 };
 

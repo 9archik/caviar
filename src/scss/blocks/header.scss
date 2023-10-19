@@ -245,24 +245,8 @@
     @media (max-width: 768px) {
         gap: 11px;
     }
-    label {
-        height: fit-content;
-        width: fit-content;
-    }
 
-    input {
-        display: none;
-    }
-
-    input:checked + span {
-        color: white;
-
-        border: 2px solid white;
-        border-radius: 50%;
-        width: 29px;
-    }
-
-    span {
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -270,6 +254,7 @@
         font-size: 14px;
         font-weight: 500;
         height: 29px;
+        min-width: 29px;
         width: auto;
         transition:
             0s border-radius,
@@ -277,6 +262,13 @@
 
         &:hover {
             color: rgb(255, 255, 255);
+        }
+
+        &.active {
+            color: white;
+
+            border: 2px solid white;
+            border-radius: 50%;
         }
     }
 }
@@ -316,6 +308,10 @@
             &::before {
                 background-color: rgba(217, 217, 217, 0.15);
             }
+        }
+
+        .logo__motto {
+            color: rgba(255, 255, 255, 0.5);
         }
     }
     &__img {
