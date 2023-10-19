@@ -29,14 +29,13 @@ export const headerClickFunc = () => {
     } else {
       burgerMenu?.classList?.add('active');
       document.body.style.overflow = 'hidden';
+      burgerAuthBtn.addEventListener('click', openAuthModal);
     }
   };
 
   menuDeskCloseBtn.onclick = () => {
     menuDesk?.classList?.remove('active');
   };
-
-  burgerAuthBtn.addEventListener('click', openAuthModal);
 
   burgerCloseBtn.onclick = () => {
     burgerMenu?.classList?.remove('active');
