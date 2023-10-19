@@ -1,0 +1,42 @@
+@import "../base/vars";
+html {
+	scroll-behavior: smooth;
+	font-family: Stem;
+	box-sizing: border-box;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+body {
+	background-color: $bgWhite;
+	font-family: inherit;
+	box-sizing: inherit;
+	display: flex;
+	flex-direction: column;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-weight: inherit;
+	font-size: inherit;
+	transition: 0.5s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	content: "";
+	display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	width: fit-content !important;
+	height: fit-content !important;
+}
+
+main {
+	flex: 1 0 auto;
+}

@@ -1,0 +1,138 @@
+@import "../base/vars";
+.caviar {
+    position: relative;
+    padding: 70px 0 103px 0;
+    overflow-x: clip;
+
+    @media (max-width: 1024px) {
+        padding: 0 18px;
+    }
+    &__descr {
+        width: 493px;
+        margin: 0 0 0 50%;
+
+        @media (max-width: 1024px) {
+            width: auto;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            font-family: Orelega One;
+            font-size: 140px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            color: $oceanBlueColor;
+
+            @media (max-width: 768px) {
+                font-size: 60px;
+            }
+        }
+
+        h4 {
+            color: $blackColor;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 140%;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        margin: 22px 0 0 0;
+        gap: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__catalog-btn {
+        min-height: 63px;
+        padding: 0px 15px;
+
+        color: white;
+        border-radius: 50px;
+        background: $oceanBlueColor;
+        box-shadow:
+            0px 1px 0px 0px rgba(0, 0, 0, 0.25),
+            0px -1px 0px 0px rgba(255, 255, 255, 0.4);
+
+        &:hover {
+            background-color: rgba(0, 51, 102, 0.84);
+        }
+    }
+
+    &__why-link {
+        min-height: 63px;
+        padding: 0px 15px;
+        background: white;
+        border-radius: 50px;
+        border: 2px solid $oceanBlueColor;
+        color: $oceanBlueColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: $oceanBlueColor;
+            color: white;
+        }
+    }
+
+    &__caviar-bg {
+        position: absolute;
+        left: 0;
+        top: -170px;
+        z-index: -100;
+        max-width: 100%;
+
+        @media (max-width: 1024px) {
+            position: static;
+        }
+    }
+
+    &__fish-bg {
+        position: absolute;
+        right: 0;
+        bottom: -18%;
+        z-index: -100;
+        max-width: 100%;
+
+        @media (max-width: 1680px) {
+            right: -16%;
+        }
+        @media (max-width: 1024px) {
+            position: static;
+        }
+    }
+
+    &__products-btn {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        min-height: 68px;
+        width: 100%;
+        padding: 0 25px;
+        border-radius: 50px;
+        background-color: $oceanBlueColor;
+        color: white;
+
+        @media (max-width: 1024px) {
+            display: flex;
+        }
+    }
+}
