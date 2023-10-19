@@ -113,6 +113,12 @@
     background-color: white;
     cursor: pointer;
 
+    &.pagination {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
     &:hover {
         transform: scale(1.05);
     }
