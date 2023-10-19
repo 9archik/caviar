@@ -11,47 +11,42 @@
 
 @font-face {
     font-family: "Stem";
-    src: url("../fonts/Stem-Medium.eot");
     src:
         local("Stem Medium"),
         local("Stem-Medium"),
-        url("../fonts/Stem-Medium.eot?#iefix") format("embedded-opentype"),
         url("../fonts/Stem-Medium.woff2") format("woff2"),
-        url("../fonts/Stem-Medium.woff") format("woff"),
-        url("../fonts/Stem-Medium.ttf") format("truetype");
+        url("../fonts/Stem-Medium.woff") format("woff");
+
     font-weight: 500;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Stem";
-    src: url("../fonts/Stem-Light.eot");
+
     src:
         local("Stem SemiLight"),
         local("Stem-SemiLight"),
-        url("../fonts/Stem-SemiLight.eot?#iefix") format("embedded-opentype"),
         url("../fonts/Stem-SemiLight.woff2") format("woff2"),
-        url("../fonts/Stem-SemiLight.woff") format("woff"),
-        url("../fonts/Stem-SemiLight.ttf") format("truetype");
+        url("../fonts/Stem-SemiLight.woff") format("woff");
+
     font-weight: 400;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Stem";
-    src: url("../fonts/Stem-Bold.eot");
+
     src:
         local("Stem Bold"),
         local("Stem-Bold"),
-        url("../fonts/Stem-Bold.eot?#iefix") format("embedded-opentype"),
         url("../fonts/Stem-Bold.woff2") format("woff2"),
-        url("../fonts/Stem-Bold.woff") format("woff"),
-        url("../fonts/Stem-Bold.ttf") format("truetype");
+        url("../fonts/Stem-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -59,7 +54,7 @@
     src: url("../fonts/OrelegaOne-Regular.ttf");
     font-weight: 400;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,28 +63,24 @@
     src:
         local("Montserrat Bold"),
         local("Montserrat-Bold"),
-        url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
         url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-        url("../fonts/Montserrat-Bold.woff") format("woff"),
-        url("../fonts/Montserrat-Bold.ttf") format("truetype");
+        url("../fonts/Montserrat-Bold.woff") format("woff");
+
     font-weight: bold;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Black.eot");
     src:
         local("Montserrat Black"),
         local("Montserrat-Black"),
-        url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"),
         url("../fonts/Montserrat-Black.woff2") format("woff2"),
-        url("../fonts/Montserrat-Black.woff") format("woff"),
-        url("../fonts/Montserrat-Black.ttf") format("truetype");
+        url("../fonts/Montserrat-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 *::-webkit-scrollbar {
@@ -105,5 +96,5 @@
 
 * {
     scrollbar-color: #036 rgba(0, 0, 0, 0.15);
-    scrollbar-width: thin; 
+    scrollbar-width: thin;
 }

@@ -406,9 +406,13 @@
     </div>
     <main class="main">
       <div class="main__caviar caviar big-container">
-        <picture class="caviar__caviar-bg">
-          <source media="(max-width: 1024px)" srcset="./img/bg-caviar-mob.webp" />
-          <img src="./img/bg-caviar.webp" alt="background-caviar" />
+        <picture>
+          <source srcset="./img/bg-caviar.webp" type="image/webp" />
+          <img data-src="./img/bg-caviar.webp" class="caviar__caviar-bg desk" alt="background-caviar" />
+        </picture>
+        <picture>
+          <source srcset="./img/bg-caviar-mob.webp" type="image/webp" />
+          <img data-src="./img/bg-caviar-mob.webp" class="caviar__caviar-bg mob" />
         </picture>
         <div class="caviar__descr">
           <h3>Caviar</h3>

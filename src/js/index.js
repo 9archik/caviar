@@ -11,6 +11,7 @@ import {
   resizePopupFilterwindow,
   windowClick,
 } from './modules/main';
+import { loadBgImage } from './modules/lazyLoad';
 
 new Swiper('.popup-product__swiper', {
   pagination: {
@@ -34,6 +35,12 @@ authModalClicks();
 regModalClicks();
 mainClicks();
 cardClick();
+loadBgImage();
 
-window.addEventListener('resize', resizePopupFilterwindow);
+const resizeWIndow = () => {
+  resizePopupFilterwindow();
+  loadBgImage();
+};
+
+window.addEventListener('resize', loadBgImage);
 popupWindow.addEventListener('click', windowClick);

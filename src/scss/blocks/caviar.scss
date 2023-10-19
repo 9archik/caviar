@@ -6,6 +6,9 @@
 
     @media (max-width: 1024px) {
         padding: 0 18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     &__descr {
         width: 493px;
@@ -99,6 +102,20 @@
         z-index: -100;
         max-width: 100%;
 
+        &.mob {
+            display: none;
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+
+        &.desk {
+            display: block;
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
         @media (max-width: 1024px) {
             position: static;
         }
@@ -107,15 +124,25 @@
     &__fish-bg {
         position: absolute;
         right: 0;
-        bottom: -18%;
+        bottom: 0;
         z-index: -100;
         max-width: 100%;
 
         @media (max-width: 1680px) {
-            right: -16%;
+            right: -10%;
         }
         @media (max-width: 1024px) {
             position: static;
+            width: 100%;
+            max-width: none;
+            margin: -20% 0 0 0;
+            transform: translate(26%, 0);
+        }
+
+        @media (max-width: 768px) {
+            width: 122%;
+            margin: -24% 0 0 0;
+            transform: translate(15%, 0) rotate(5deg);
         }
     }
 
@@ -130,6 +157,7 @@
         border-radius: 50px;
         background-color: $oceanBlueColor;
         color: white;
+        margin: 20px 0 0 0;
 
         @media (max-width: 1024px) {
             display: flex;
