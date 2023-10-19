@@ -11,13 +11,16 @@ const burgerMenu = document.querySelector('.burger');
 const burgerCloseBtn = document.querySelector('.burger__close-btn');
 const popupFilterWindow = document.querySelector('.popup__filter');
 const popupProductWindow = document.querySelector('.popup__product');
+const burgerAuthBtn = document.querySelector('.burger__auth-btn');
+
+const openAuthModal = (e) => {
+  e.stopPropagation();
+  popupWindow?.classList?.add('active');
+  authModal?.classList?.add('active');
+};
 
 export const headerClickFunc = () => {
-  authBtn.onclick = (e) => {
-    e.stopPropagation();
-    popupWindow?.classList?.add('active');
-    authModal?.classList?.add('active');
-  };
+  authBtn.onclick = openAuthModal;
 
   burgerMenuBtn.onclick = (e) => {
     e.stopPropagation();
@@ -33,9 +36,12 @@ export const headerClickFunc = () => {
     menuDesk?.classList?.remove('active');
   };
 
+  burgerAuthBtn.addEventListener('click', openAuthModal);
+
   burgerCloseBtn.onclick = () => {
     burgerMenu?.classList?.remove('active');
     document.body.style.overflow = 'auto';
+    burgerAuthBtn.removeEventListener('click', openAuthModal);
   };
 };
 

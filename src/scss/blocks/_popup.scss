@@ -16,6 +16,7 @@
         position: absolute;
         top: 18px;
         right: 18px;
+        z-index: 2;
 
         @media (max-width: 768px) {
             top: 27px;
@@ -174,6 +175,7 @@
         padding: 28px;
         flex-wrap: wrap;
         position: relative;
+        gap: 10px;
 
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
