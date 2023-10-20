@@ -99,15 +99,16 @@
     &__caviar-bg {
         position: absolute;
         left: 0;
-        top: -170px;
-        z-index: -100;
-        max-width: 100%;
+        top: 0px;
+        z-index: -1;
 
-        &.mob {
-            display: none;
-            @media (max-width: 1024px) {
-                display: block;
-            }
+
+        width: 780px;
+        transform: rotate(0deg) translateX(11%);
+
+        @media (max-width: 1680px) {
+            transform: rotate(0deg) translateX(0%);
+         
         }
 
         &.desk {
@@ -129,9 +130,8 @@
         z-index: -100;
         max-width: 100%;
 
-        @media (max-width: 1680px) {
-            right: -10%;
-        }
+        right: -10%;
+
         @media (max-width: 1024px) {
             position: static;
             width: 100%;

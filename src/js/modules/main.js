@@ -171,3 +171,4 @@ export const popupProductClick = () => {
     popupWindow?.classList?.remove('active');
   };
 };
+
