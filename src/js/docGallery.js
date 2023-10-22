@@ -1,7 +1,7 @@
 import { removeGallery } from './modules/gallery';
 const documentBlock = document.querySelector('.products__documents');
 const popupWindow = document.querySelector('.popup');
-const documentList = document.querySelectorAll('.documents__list-item > img');
+const documentList = document.querySelectorAll('.documents__list-item-img');
 
 const state = { activeIndex: 0 };
 
