@@ -184,8 +184,6 @@ export const mainClicks = () => {
 
   if (ourProductsBtn) {
     ourProductsBtn.onclick = (e) => {
-      console.log('click btn');
-
       const popupFilterWindow = document.querySelector('.popup-filter');
       console.log(popupFilterWindow);
       popupFilterWindow?.classList?.add('active');
@@ -193,7 +191,6 @@ export const mainClicks = () => {
       document.body.style.overflow = 'hidden';
       const ourProductsCloseBtnClick = document.querySelector('.popup-filter__header > .popup__close-btn');
       ourProductsCloseBtnClick.onclick = () => {
-        console.log('click close');
         popupFilterWindow?.classList?.remove('active');
         popupWindow?.classList?.remove('active');
         document.body.style.overflow = 'auto';
