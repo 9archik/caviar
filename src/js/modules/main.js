@@ -15,7 +15,7 @@ const menuDeskCloseBtn = document.querySelector('.menu-desk__close-btn');
 const burgerMenu = document.querySelector('.burger');
 const burgerCloseBtn = document.querySelector('.burger__close-btn');
 const popupFilterWindow = document.querySelector('.popup__filter');
-const popupProductWindow = document.querySelector('.popup__product');
+const popupProductWindow = document.querySelector('.popup-product');
 const burgerAuthBtn = document.querySelector('button.burger__auth-btn');
 
 const counterState = {
@@ -226,7 +226,11 @@ export const cardClick = () => {
 };
 
 export const popupProductClick = () => {
-  const popupWindowProduct = document.querySelector('.popup-product.active');
+  const popupWindowProduct = document.querySelector('.popup-product');
+
+  popupWindowProduct?.classList?.add('active');
+
+
 
   const closeBtn = document.querySelector('.popup-product.active > .popup__close-btn');
 

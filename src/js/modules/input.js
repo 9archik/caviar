@@ -22,7 +22,7 @@ export const profileFormClick = () => {
     profileForm.addEventListener('click', (e) => {
       if (e.target.getAttribute('class') === 'profile-input__edit-btn') {
         const input = document.querySelector(`input[name=${e.target.getAttribute('id')}]`);
-        console.log(input);
+
         if (input) {
           input.removeAttribute('readonly');
           input.focus();
