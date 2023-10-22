@@ -1,0 +1,76 @@
+<main class="profile container">
+  <div class="profile__header">
+    <div class="profile__header-name">BASKET</div>
+    <div class="profile__header-links">
+      <a class="profile__header-link-item active">BASKET</a>
+      <a class="profile__header-link-item">YOUR PROFILE</a>
+      <a class="profile__header-link-item">ORDERS</a>
+    </div>
+  </div>
+
+  <form class="profile__form profile-form">
+    <div class="profile-form__container">
+      <div class="profile-form__block">
+        <div class="profile__form-header">Personal Info</div>
+        <label class="profile-form__input profile-input">
+          <span>name:</span>
+          <input placeholder="Name" type="text" value="name name name" required readonly />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+
+        <label class="profile-form__input profile-input">
+          <span>password:</span>
+          <input placeholder="Name" type="password" value="password" required readonly />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+
+        <label class="profile-form__input profile-input">
+          <span>phone:</span>
+          <input placeholder="Name" type="tel" value="+7777777777" required readonly />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+      </div>
+
+      <div class="profile-form__block">
+        <div class="profile__form-header">Shipping</div>
+        <label class="profile-form__input profile-input">
+          <input placeholder="Country" type="text" required />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+        <label class="profile-form__input profile-input">
+          <input placeholder="City" type="text" required />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+
+        <label class="profile-form__input profile-input">
+          <input placeholder="Street" type="text" required />
+          <button class="profile-input__edit-btn">Edit</button>
+        </label>
+
+        <div class="profile__address-block">
+          <label class="profile-form__input profile-input address">
+            <input placeholder="House" type="text" required />
+            <button class="profile-input__edit-btn">Edit</button>
+          </label>
+
+          <label class="profile-form__input profile-input address">
+            <input placeholder="Entrance" type="text" required />
+            <button class="profile-input__edit-btn">Edit</button>
+          </label>
+
+          <label class="profile-form__input profile-input address">
+            <input placeholder="Flat" type="text" required />
+            <button class="profile-input__edit-btn">Edit</button>
+          </label>
+        </div>
+      </div>
+
+      <div class="profile__comments">
+        <div class="profile__form-header">Comments</div>
+        <textarea class="full-height" placeholder="Your comments on the order" required></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="profile__submit-btn center">Save changes</button>
+  </form>
+</main>

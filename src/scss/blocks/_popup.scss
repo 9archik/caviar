@@ -190,7 +190,8 @@
             position: absolute;
             content: "";
             width: 50%;
-            height: 100%;
+            height: 13px;
+            top: 0;
             left: 0;
             background: url(../../img/ellipse-white.svg) repeat-x 0 -13px;
 
@@ -203,8 +204,9 @@
             position: absolute;
             content: "";
             width: 50%;
-            height: 100%;
+            height: 13px;
             right: 0;
+            top: 0;
             background: url(../../img/ellipse-gray.svg) repeat-x 0 -13px;
 
             @media (max-width: 768px) {

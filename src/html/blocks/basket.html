@@ -1,0 +1,58 @@
+<main class="profile container">
+  <div class="profile__header">
+    <div class="profile__header-name">BASKET</div>
+    <div class="profile__header-links">
+      <a class="profile__header-link-item active">BASKET</a>
+      <a class="profile__header-link-item">YOUR PROFILE</a>
+      <a class="profile__header-link-item">ORDERS</a>
+    </div>
+  </div>
+
+  <form class="profile__form basket">
+    <div class="basket__placing">
+      <div class="profile__form-header delete-mob">Placing an order</div>
+
+      <div class="basket__placing-block">
+        <div class="basket__placing-item">
+          <input class="profile__input profile-input" placeholder="Name" type="text" required />
+
+          <input class="profile__input profile-input" placeholder="Phone" type="tel" required />
+
+          <div class="basket__checkboks">
+            <label class="profile__checkboxs profile-checkbox">
+              <input name="delivery-type" type="radio" checked />
+              <span>Shipping</span>
+            </label>
+
+            <label class="profile__checkboxs profile-checkbox">
+              <input name="delivery-type" type="radio" />
+              <span>Pickup</span>
+            </label>
+          </div>
+        </div>
+        <div class="basket__placing-item">
+          <input class="profile__input profile-input" placeholder="Country" type="text" required readonly />
+
+          <input class="profile__input profile-input" placeholder="City" type="text" required />
+
+          <input class="profile__input profile-input" placeholder="Street" type="text" required />
+
+          <div class="profile__address-block">
+            <input class="profile__input profile-input address" placeholder="House" type="text" required />
+
+            <input class="profile__input profile-input address" placeholder="Entrance" type="text" required />
+
+            <input class="profile__input profile-input address" placeholder="Flat" type="text" required />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile__comments basket-comments">
+      <div class="profile__form-header delete-mob">Comments</div>
+
+      <textarea  placeholder="Your comments on the order" required></textarea>
+      <button type="submit" class="profile__submit-btn">Payment online</button>
+    </div>
+  </form>
+</main>

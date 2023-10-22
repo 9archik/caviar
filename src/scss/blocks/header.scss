@@ -165,6 +165,29 @@
         }
     }
 
+    &__basket-btn-items {
+        margin: 0 0 0 5px;
+        color: rgba(0, 0, 0, 0.6);
+
+        font-family: Open Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.15px;
+    }
+
+    &__basket-btn-price {
+        color: $oceanBlueColor;
+
+        font-family: Open Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.15px;
+    }
+
     &__burger-btn {
         color: $blackColor;
         display: flex;
@@ -287,6 +310,8 @@
     border-radius: 30px;
     border: 2px solid $oceanBlueColor;
     background-color: white;
+    transition: 0.5s;
+
 }
 
 .logo {

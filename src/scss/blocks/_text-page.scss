@@ -18,6 +18,14 @@
             min-height: 67px;
             margin: 0;
         }
+
+        @media (max-width: 768px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 50px;
+        }
     }
 
     &__bg {
@@ -62,6 +70,7 @@
         @media (max-width: 1024px) {
             float: none;
             max-width: 100%;
+            margin: 0;
         }
     }
 

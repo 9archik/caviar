@@ -128,6 +128,7 @@
     border-radius: 20px;
     background-color: white;
     cursor: pointer;
+    transition: 0.5s;
 
     &.pagination {
         @media (max-width: 768px) {
@@ -219,6 +220,7 @@
         font-size: 14px;
         font-weight: 500;
         border-radius: 50px;
+        transition: 0.5s;
 
         &:hover {
             color: $oceanBlueColor;
@@ -299,6 +301,8 @@
 
         div {
             text-align: center;
+            transition: .5s;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.05);
