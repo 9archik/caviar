@@ -12,56 +12,67 @@
     <div class="profile-form__container">
       <div class="profile-form__block">
         <div class="profile__form-header">Personal Info</div>
-        <label class="profile-form__input profile-input">
+        <div class="profile-form__input profile-input no-margin">
           <span>name:</span>
-          <input placeholder="Name" type="text" value="name name name" required readonly />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
+          <input type="text" value="name name name" name="name" required readonly />
+          <button type="button" id="name" class="profile-input__edit-btn">Edit</button>
+        </div>
 
-        <label class="profile-form__input profile-input">
+        <div class="profile-form__input profile-input">
           <span>password:</span>
-          <input placeholder="Name" type="password" value="password" required readonly />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
+          <input  name="password" type="password" value="password" required readonly />
+          <button type="button" id="password" class="profile-input__edit-btn">Edit</button>
+        </div>
 
-        <label class="profile-form__input profile-input">
+        <div class="profile-form__input profile-input">
           <span>phone:</span>
-          <input placeholder="Name" type="tel" value="+7777777777" required readonly />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
+          <input name="phone"  type="tel" value="+7777777777" required readonly />
+          <button type="button" id="phone" class="profile-input__edit-btn">Edit</button>
+        </div>
       </div>
 
       <div class="profile-form__block">
         <div class="profile__form-header">Shipping</div>
-        <label class="profile-form__input profile-input">
-          <input placeholder="Country" type="text" required />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
-        <label class="profile-form__input profile-input">
-          <input placeholder="City" type="text" required />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
+        <div class="profile-form__input profile-input select no-margin">
+          <input placeholder="Country" type="text" required readonly />
+          <button type="button" class="profile-input__select-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+              <path d="M1 1.5L7.5 7.5L14 1.5" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
 
-        <label class="profile-form__input profile-input">
-          <input placeholder="Street" type="text" required />
-          <button class="profile-input__edit-btn">Edit</button>
-        </label>
+          <ul class="select__list">
+            <li data-value="Россия" class="select__list-item">Россия</li>
+            <li data-value="Россия" class="select__list-item">Россия</li>
+            <li data-value="Россия" class="select__list-item">Россия</li>
+            <li data-value="Россия" class="select__list-item">Россия</li>
+          </ul>
+        </div>
+        <div class="profile-form__input profile-input">
+          <input name="city" placeholder="City" type="text" required readonly />
+          <button type="button" id="city" class="profile-input__edit-btn">Edit</button>
+        </div>
+
+        <div class="profile-form__input profile-input">
+          <input name="street" placeholder="Street" type="text" required readonly />
+          <button type="button" id="street" class="profile-input__edit-btn">Edit</button>
+        </div>
 
         <div class="profile__address-block">
-          <label class="profile-form__input profile-input address">
-            <input placeholder="House" type="text" required />
-            <button class="profile-input__edit-btn">Edit</button>
-          </label>
+          <div class="profile-form__input profile-input address">
+            <input name="house" placeholder="House" type="text" required readonly />
+            <button type="button" id="house" class="profile-input__edit-btn">Edit</button>
+          </div>
 
-          <label class="profile-form__input profile-input address">
-            <input placeholder="Entrance" type="text" required />
-            <button class="profile-input__edit-btn">Edit</button>
-          </label>
+          <div class="profile-form__input profile-input address">
+            <input name="entrance" placeholder="Entrance" type="text" required readonly />
+            <button type="button" id="entrance" class="profile-input__edit-btn">Edit</button>
+          </div>
 
-          <label class="profile-form__input profile-input address">
-            <input placeholder="Flat" type="text" required />
-            <button class="profile-input__edit-btn">Edit</button>
-          </label>
+          <div class="profile-form__input profile-input address">
+            <input name="flat" placeholder="Flat" type="text" required />
+            <button type="button" id="flat" class="profile-input__edit-btn">Edit</button>
+          </div>
         </div>
       </div>
 

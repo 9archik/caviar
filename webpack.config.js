@@ -3,6 +3,8 @@ const config = {
   entry: {
     index: './src/js/index.js',
     basket: './src/js/basket.js',
+    'basket-form': './src/js/basket-form.js',
+    docGallery: './src/js/docGallery.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -20,7 +22,7 @@ const config = {
             loader: 'file-loader',
             options: {
               outputPath: '../img',
-              options: '[name].[ext]'
+              options: '[name].[ext]',
             },
           },
         ],

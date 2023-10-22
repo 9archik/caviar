@@ -31,18 +31,42 @@
           </div>
         </div>
         <div class="basket__placing-item">
-          <input class="profile__input profile-input" placeholder="Country" type="text" required readonly />
+          <label class="profile-form__input profile-input select">
+            <input placeholder="Country" type="text" required readonly />
+            <span class="profile-input__select-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M1 1.5L7.5 7.5L14 1.5" stroke="black" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
 
-          <input class="profile__input profile-input" placeholder="City" type="text" required />
+            <ul class="select__list">
+              <li data-value="Россия" class="select__list-item">Россия</li>
+              <li data-value="Россия" class="select__list-item">Россия</li>
+              <li data-value="Россия" class="select__list-item">Россия</li>
+              <li data-value="Россия" class="select__list-item">Россия</li>
+            </ul>
+          </label>
 
-          <input class="profile__input profile-input" placeholder="Street" type="text" required />
+          <label class="profile-form__input profile-input">
+            <input placeholder="City" type="text" required />
+          </label>
+
+          <label class="profile-form__input profile-input">
+            <input placeholder="Street" type="text" required />
+          </label>
 
           <div class="profile__address-block">
-            <input class="profile__input profile-input address" placeholder="House" type="text" required />
+            <label class="profile-form__input profile-input address">
+              <input placeholder="House" type="text" required />
+            </label>
 
-            <input class="profile__input profile-input address" placeholder="Entrance" type="text" required />
+            <label class="profile-form__input profile-input address">
+              <input placeholder="Entrance" type="text" required />
+            </label>
 
-            <input class="profile__input profile-input address" placeholder="Flat" type="text" required />
+            <label class="profile-form__input profile-input address">
+              <input placeholder="Flat" type="text" required />
+            </label>
           </div>
         </div>
       </div>
@@ -51,7 +75,7 @@
     <div class="profile__comments basket-comments">
       <div class="profile__form-header delete-mob">Comments</div>
 
-      <textarea  placeholder="Your comments on the order" required></textarea>
+      <textarea placeholder="Your comments on the order" required></textarea>
       <button type="submit" class="profile__submit-btn">Payment online</button>
     </div>
   </form>

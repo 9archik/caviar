@@ -20,5 +20,8 @@ const resizeWIndow = () => {
   resizePopupFilterwindow();
 };
 
+if(popupWindow)
 popupWindow.addEventListener('click', windowClick);
+
+if(menuDesk)
 menuDesk.addEventListener('click', windowClick);
