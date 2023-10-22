@@ -167,18 +167,18 @@
 
     &__header-right {
         text-align: right;
+    }
 
-        &__name-info {
-            color: rgba(0, 0, 0, 0.5);
-            font-size: 14px;
-            line-height: 120%;
-        }
+    &__name-info {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        line-height: 120%;
+    }
 
-        &__info {
-            color: #000;
-            font-size: 20px;
-            line-height: 120%;
-        }
+    &__info {
+        color: #000;
+        font-size: 20px;
+        line-height: 120%;
     }
 
     &__image {
@@ -301,7 +301,7 @@
 
         div {
             text-align: center;
-            transition: .5s;
+            transition: 0.5s;
             cursor: pointer;
 
             &:hover {

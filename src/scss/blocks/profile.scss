@@ -275,6 +275,8 @@
         max-height: 0;
         transition: 0.5s max-height;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
 
         &.active {
             max-height: 200px;

@@ -23,6 +23,10 @@ const counterState = {
   value: 1,
 };
 
+const stopPropagation = (e) => {
+  e.stopPropagation();
+};
+
 const openAuthModal = (e) => {
   e.stopPropagation();
   popupWindow?.classList?.add('active');
@@ -173,25 +177,30 @@ export const authModalClicks = () => {
 
 export const mainClicks = () => {
   const ourProductsBtn = document.querySelector('.caviar__products-btn');
-  const ourProductsCloseBtnClick = document.querySelector('.popup-filter__header > .popup__close-btn');
+
 
   window.addEventListener('resize', resizePopupFilterwindow);
   window.addEventListener('load', resizePopupFilterwindow);
 
   if (ourProductsBtn) {
     ourProductsBtn.onclick = (e) => {
+      console.log('click btn');
+
+      const popupFilterWindow = document.querySelector('.popup-filter');
+      console.log(popupFilterWindow);
       popupFilterWindow?.classList?.add('active');
       popupWindow?.classList?.add('active');
       document.body.style.overflow = 'hidden';
+      const ourProductsCloseBtnClick = document.querySelector('.popup-filter__header > .popup__close-btn');
+      ourProductsCloseBtnClick.onclick = () => {
+        console.log('click close');
+        popupFilterWindow?.classList?.remove('active');
+        popupWindow?.classList?.remove('active');
+        document.body.style.overflow = 'auto';
+      };
       e.stopPropagation();
     };
   }
-
-  ourProductsCloseBtnClick.onclick = () => {
-    popupFilterWindow?.classList?.remove('active');
-    popupWindow?.classList?.remove('active');
-    document.body.style.overflow = 'auto';
-  };
 
   popupFilterWindow.addEventListener('click', stopPropagation);
 };
@@ -218,8 +227,7 @@ export const cardClick = () => {
 
   for (let i = 0; i < card.length; i++) {
     card[i].onclick = () => {
-      popupWindow?.classList?.add('active');
-      popupProductWindow?.classList?.add('active');
+      console.log('click');
       popupProductClick();
     };
   }
@@ -227,10 +235,10 @@ export const cardClick = () => {
 
 export const popupProductClick = () => {
   const popupWindowProduct = document.querySelector('.popup-product');
+  const popupWindow = document.querySelector('.popup');
+  popupWindow?.classList?.add('active');
 
   popupWindowProduct?.classList?.add('active');
-
-
 
   const closeBtn = document.querySelector('.popup-product.active > .popup__close-btn');
 

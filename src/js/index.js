@@ -14,14 +14,13 @@ const menuDesk = document.querySelector('.menu-desk');
 
 headerClickFunc();
 authModalClicks();
+mainClicks();
 cardClick();
 
 const resizeWIndow = () => {
   resizePopupFilterwindow();
 };
 
-if(popupWindow)
-popupWindow.addEventListener('click', windowClick);
+if (popupWindow) popupWindow.addEventListener('click', windowClick);
 
-if(menuDesk)
-menuDesk.addEventListener('click', windowClick);
+if (menuDesk) menuDesk.addEventListener('click', windowClick);

@@ -8,17 +8,17 @@ export const removeGallery = () => {
 
   const closeBtn = document.querySelector('.document-gallery__close-btn');
 
-  if (nextBtn) {
-    nextBtn.removeEventListener('click', clickBtnNext);
-  }
+  // if (nextBtn) {
+  //   nextBtn.removeEventListener('click', clickBtnNext);
+  // }
 
-  if (prevBtn) {
-    prevBtn.removeEventListener('click', clickBtnPrev);
-  }
+  // if (prevBtn) {
+  //   prevBtn.removeEventListener('click', clickBtnPrev);
+  // }
 
-  if (closeBtn) {
-    closeBtn.removeEventListener('click', removeGallery);
-  }
+  // if (closeBtn) {
+  //   closeBtn.removeEventListener('click', removeGallery);
+  // }
 
   if (galleryCont) {
     popupWindow?.classList?.remove('active');
