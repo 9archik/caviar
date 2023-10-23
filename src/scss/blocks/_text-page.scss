@@ -3,6 +3,15 @@
 .text-page {
     position: relative;
 
+    color: rgba(0, 0, 0, 0.6);
+
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
     &__header {
         color: $oceanBlueColor;
         font-family: Orelega One;
@@ -76,9 +85,6 @@
 
     &__text,
     &__theme-header {
-        position: relative;
-        margin: 20px 0 0 25%;
-
         @media (max-width: 1024px) {
             margin: 20px 0 0 0;
         }
@@ -102,6 +108,62 @@
     }
 
     &__theme {
+        &.caviar-theme {
+            h2,
+            h3 {
+                position: relative;
+                margin: 20px 0 20px 25%;
+
+                @media (max-width: 1024px) {
+                    margin: 24px 20px 0 20px;
+                }
+            }
+
+            h2 {
+                font-family: Orelega One;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                color: black;
+            }
+
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: $oceanBlueColor;
+                font-family: Orelega One;
+                font-size: 30px;
+                line-height: 120%; /* 36px */
+                margin: 10px 0 0 25%;
+
+                @media (max-width: 1024px) {
+                    margin: 24px 20px 0 20px;
+                }
+            }
+
+            h3,
+            h4,
+            h5,
+            h6 + div {
+            }
+
+            & > div {
+                & > div {
+                    margin: 0px 0 0 25%;
+
+                    @media (max-width: 1024px) {
+                        margin: 24px 20px 0 20px;
+                    }
+
+                    p {
+                        margin: 20px 0 0 0;
+                    }
+                }
+            }
+        }
+
         &.harvesting {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -111,74 +173,31 @@
                 grid-gap: 20px 0;
                 padding: 12px;
             }
-        }
-    }
 
-    &__text {
-        color: rgba(0, 0, 0, 0.6);
+            div {
+                &:last-child {
+                    -webkit-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                    -moz-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                    box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                    padding: 35px 20px;
 
-        font-family: "Open Sans";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        letter-spacing: 0.15px;
-
-        &.harvesting {
-            -webkit-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-            -moz-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-            box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-            padding: 35px 20px;
-
-            @media (max-width: 1024px) {
-                box-shadow: none;
-                -webkit-box-shadow: none;
-                -moz-box-shadow: none;
-                padding: 0;
+                    @media (max-width: 1024px) {
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        padding: 0;
+                    }
+                }
             }
         }
-    }
-
-    &__theme-header {
-        font-family: Orelega One;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 120%;
-        color: $blackColor;
-
-        @media (max-width: 768px) {
-            font-size: 28px;
-        }
-
-        &.about {
-            margin: 60px 0px 0 0px;
-
-            @media (max-width: 1024px) {
-                text-align: center;
-                margin: 10px 0 0 0px;
-            }
-        }
-
-        &.contact {
-            margin: 20px 0 0 0;
-
-            @media (max-width: 1024px) {
-                margin: 0 0 0 0;
-            }
-        }
-    }
-
-    &__theme-subheader {
-        color: $oceanBlueColor;
-        font-family: Orelega One;
-        font-size: 30px;
-        line-height: 120%; /* 36px */
-        margin: 10px 0 0 0;
     }
 
     &__image {
-        margin: 20px 0 0 0;
+        display: flex;
+        & > img {
+            margin: 20px 0 0 0;
+            display: block;
+        }
     }
 
     &__div {
@@ -207,6 +226,25 @@
         text-align: left;
     }
 
+    h2 {
+        color: var(--black, #000);
+        font-family: Orelega One;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 48px */
+        margin: 40px 0 0 0;
+    }
+
+    & h2 + div {
+        margin: 20px 0 0 0;
+    }
+
+    div {
+        p {
+            margin: 20px 0 0 0;
+        }
+    }
     @media (max-width: 1024px) {
         display: flex;
         flex-direction: column;
@@ -217,7 +255,7 @@
 .contacts {
     padding: 0;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
 
     @media (max-width: 1024px) {
         grid-template-columns: 1fr;
@@ -229,7 +267,8 @@
         grid-template-columns: 1fr 1fr;
         padding: 60px 12px 0 60px;
         height: fit-content;
-        grid-gap: 0 24px;
+        grid-gap: 24px;
+        min-width: 0;
 
         @media (max-width: 1024px) {
             grid-template-columns: 1fr;
@@ -272,7 +311,7 @@
             order: 1;
         }
 
-        margin: 24px 0 0 0;
+        // margin: 24px 0 0 0;
     }
 
     &__address {
