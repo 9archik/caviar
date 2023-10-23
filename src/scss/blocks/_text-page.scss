@@ -146,18 +146,20 @@
             h3,
             h4,
             h5,
-            h6 + div {
+            h6 + p {
             }
 
             & > div {
-                & > div {
+                & > p,
+                div {
                     margin: 0px 0 0 25%;
 
                     @media (max-width: 1024px) {
                         margin: 24px 20px 0 20px;
                     }
 
-                    p {
+                    span {
+                        display: block;
                         margin: 20px 0 0 0;
                     }
                 }
@@ -174,19 +176,17 @@
                 padding: 12px;
             }
 
-            div {
-                &:last-child {
-                    -webkit-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-                    -moz-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-                    box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
-                    padding: 35px 20px;
+            p {
+                -webkit-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                -moz-box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                box-shadow: -89px -1px 62px 11px rgba(255, 255, 255, 0.8);
+                padding: 35px 20px;
 
-                    @media (max-width: 1024px) {
-                        box-shadow: none;
-                        -webkit-box-shadow: none;
-                        -moz-box-shadow: none;
-                        padding: 0;
-                    }
+                @media (max-width: 1024px) {
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    padding: 0 20px;
                 }
             }
         }
@@ -200,10 +200,6 @@
         }
     }
 
-    &__div {
-        height: 20px;
-    }
-
     &__harvesting-image {
         border-radius: 20px;
         background:
@@ -214,6 +210,10 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 0 14px;
         }
     }
 }
@@ -236,12 +236,13 @@
         margin: 40px 0 0 0;
     }
 
-    & h2 + div {
+    & h2 + p {
         margin: 20px 0 0 0;
     }
 
-    div {
-        p {
+    p {
+        span {
+            display: block;
             margin: 20px 0 0 0;
         }
     }
