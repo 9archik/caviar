@@ -91,9 +91,6 @@ export const headerClickFunc = () => {
   if (burgerCloseBtn) burgerCloseBtn.onclick = burgerMenuCloseBtn;
 };
 
-export function resizePopupFilterwindow() {
-  if (popupFilterWindow) popupFilterWindow.setAttribute(`style`, `height: ${window.innerHeight}px`);
-}
 
 const authModalClick = (e) => {
   e.stopPropagation();
@@ -179,8 +176,6 @@ export const mainClicks = () => {
   const ourProductsBtn = document.querySelector('.caviar__products-btn');
 
 
-  window.addEventListener('resize', resizePopupFilterwindow);
-  window.addEventListener('load', resizePopupFilterwindow);
 
   if (ourProductsBtn) {
     ourProductsBtn.onclick = (e) => {

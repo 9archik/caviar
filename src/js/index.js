@@ -5,7 +5,6 @@ import {
   mainClicks,
   popupProductClick,
   regModalClicks,
-  resizePopupFilterwindow,
   windowClick,
 } from './modules/main';
 
@@ -17,10 +16,8 @@ authModalClicks();
 mainClicks();
 cardClick();
 
-const resizeWIndow = () => {
-  resizePopupFilterwindow();
-};
+if (popupWindow) 
+popupWindow.addEventListener('click', windowClick);
 
-if (popupWindow) popupWindow.addEventListener('click', windowClick);
-
-if (menuDesk) menuDesk.addEventListener('click', windowClick);
+if (menuDesk) 
+menuDesk.addEventListener('click', windowClick);
